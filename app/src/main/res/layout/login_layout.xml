@@ -3,40 +3,71 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/forest"
     android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
     tools:context=".SplashActivity">
 
 
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:textAlignment="center"
-       android:textColor="#646E34"
-       android:text="Join The Forest"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join The Forest"
+        android:textAlignment="center"
+        android:textColor="#646E34"
+        android:textSize="20sp"
 
-<com.google.android.material.textfield.TextInputLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center">
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="300sp"
-        android:layout_height="50sp"
-
-</com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
         android:gravity="center">
+
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="300sp"
             android:layout_height="50sp"
+            android:hint="Assure Your email:"
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:gravity="center">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:hint="Assure Your Password:"
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Your Account? Click Here..."
+        android:textAlignment="center"
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnentrar"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnsair"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_toEndOf="@+id/btnentrar"
+
+    </RelativeLayout>
 
 </LinearLayout>
